@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个页面</title>
+</head>
+<body>
+
+第一个页面
+
+<a href="/static/about.html">关于</a>
+<ol>
+    <li>洗衣服</li>
+    <li>做饭</li>
+    <li>写作业</li>
+</ol>
+
+<li>
+    <li>洗衣服</li>
+    <li>做饭</li>
+    <li>写作业</li>
+</li>
+
+<dl>
+    <dt>我</dt>
+    <dd>这时我</dd>
+</dl>
+<dl>
+    <dt>你</dt>
+    <dd>这时你</dd>
+</dl>
+
+<table>
+    <thead>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>所在地</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>23</td>
+            <td>Jerry</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Peter</td>
+            <td>UK</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>111</td>
+        <td>222</td>
+        <td>333</td>
+        <td>444</td>
+    </tr>
+    </tfoot>
+</table>
+
+<form action="/register/" method="POST">
+    <label>登陆名称</label><input type="text" value="chen" name="username">
+    <label>密码</label><input type="password"  name="pw">
+    <label>备注</label><textarea name="remark">内容备注</textarea>
+    <label>性别</label><input type="radio" value="1" name="sex" checked="checked"><label>男</label>
+                        <input type="radio" value="0" name="sex"><label>女</label>
+
+    <label>性别</label><input type="checkbox" value="football" name="hobby"><label>足球</label>
+                        <input type="checkbox" value="basketball" name="hobby"><label>篮球</label>
+                        <input type="checkbox" value="valleyball" name="hobby"><label>排球</label>
+    <label>部门</label><select name="department">
+                            <option value="developer">开发</option>
+                            <option value="operations">运维</option>
+                            <option value="finance">财务</option>
+                        </select>
+
+    <label>服务器</label><select name="server" multiple="multiple">
+        <option value="192.168.1.100">192.168.1.100</option>
+        <option value="192.168.1.101">192.168.1.101</option>
+        <option value="192.168.1.102">192.168.1.102</option>
+    </select>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
